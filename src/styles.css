@@ -1,14 +1,9 @@
-/* App-local styles. Mesh chrome (settings drawer, self-ref bar) is provided by
- * @baditaflorin/mesh-common/styles.css imported in main.tsx. */
-
 :root {
   color-scheme: dark;
 }
-
 * {
   box-sizing: border-box;
 }
-
 html,
 body,
 #root {
@@ -22,30 +17,111 @@ body,
   -webkit-tap-highlight-color: transparent;
 }
 
-.feature-placeholder {
-  padding: 6rem 1.5rem 2rem;
-  text-align: center;
+.wp-screen {
+  padding: 4rem 1rem 5rem;
+  max-width: 56rem;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
+  align-items: center;
 }
-
-.feature-placeholder h1 {
-  font-size: 1.6rem;
-  margin: 0;
+.wp-header {
+  text-align: center;
+}
+.wp-header h1 {
+  margin: 0 0 0.3rem;
   color: var(--mesh-accent);
+  font-size: 1.5rem;
+}
+.wp-status {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--mesh-muted);
 }
 
-.feature-placeholder p {
+.wp-load {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
   max-width: 32rem;
+}
+.wp-load input {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--mesh-fg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  font-size: 1rem;
+}
+.wp-load button {
+  background: var(--mesh-accent);
+  color: #0b0a06;
+  border: none;
+  border-radius: 8px;
+  padding: 0 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.wp-load button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.wp-frame {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.wp-frame iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.wp-controls {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.wp-controls button {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--mesh-fg);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.wp-controls button:hover {
+  background: var(--mesh-accent);
+  color: #0b0a06;
+  border-color: var(--mesh-accent);
+}
+
+.wp-pos {
   margin: 0;
-  opacity: 0.85;
+  color: var(--mesh-muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.85rem;
+}
+.wp-help {
+  margin: 0;
+  color: var(--mesh-muted);
+  font-size: 0.78rem;
+  text-align: center;
+  max-width: 32rem;
   line-height: 1.5;
 }
-
-.feature-status {
-  font-size: 0.85rem;
-  opacity: 0.6;
-  font-variant-numeric: tabular-nums;
+.wp-clear {
+  background: transparent;
+  color: var(--mesh-muted);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  cursor: pointer;
 }
