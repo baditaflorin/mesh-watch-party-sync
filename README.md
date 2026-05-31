@@ -1,7 +1,7 @@
 # mesh-watch-party-sync
 
 [![pages](https://img.shields.io/badge/live-baditaflorin.github.io%2Fmesh-watch-party-sync-ff3b3b)](https://baditaflorin.github.io/mesh-watch-party-sync/)
-[![version](https://img.shields.io/badge/version-0.1.0-blue)](https://github.com/baditaflorin/mesh-watch-party-sync/blob/main/package.json)
+[![version](https://img.shields.io/badge/version-0.1.1-blue)](https://github.com/baditaflorin/mesh-watch-party-sync/blob/main/package.json)
 [![license](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
 > Synced YouTube playback across friends in different homes
